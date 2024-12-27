@@ -1,0 +1,1 @@
+{"name":"Local: coinCombinationTwo","url":"d:\\CSES\\dyanamicProgramming\\coinCombinationTwo.cpp","tests":[{"id":1735229225590,"input":"3 9\n2 3 5","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CSES\\dyanamicProgramming\\coinCombinationTwo.cpp","group":"local","local":true}
