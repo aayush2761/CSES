@@ -1,0 +1,1 @@
+{"name":"Local: arrayDescription","url":"d:\\CSES\\dyanamicProgramming\\arrayDescription.cpp","tests":[{"id":1735354595407,"input":"3 5\n2 0 2","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CSES\\dyanamicProgramming\\arrayDescription.cpp","group":"local","local":true}
