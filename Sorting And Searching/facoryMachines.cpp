@@ -1,4 +1,3 @@
-
 #include<iostream>
 #include <bits/stdc++.h>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -85,37 +84,34 @@ ll moduloMultiplication(ll a,ll b,ll mod){ll res = 0;a %= mod;while (b){if (b & 
 ll powermod(ll x, ll y, ll p){ll res = 1;x = x % p;if (x == 0) return 0;while (y > 0){if (y & 1)res = (res*x) % p;y = y>>1;x = (x*x) % p;}return res;}
 //To find modulo inverse, call powermod(A,M-2,M)
 
+ll helper(ll maxTime, vi&v, ll t){
+    ll count=0;
+    for(int i=0;i<v.size();i++){
+        count+=(maxTime/v[i]);
+        if(count>=t)return 1;
+    }
+    return 0;
+}
+
 int32_t main()
 {
     fastio()
     auto solve = [&] () {
-        inint(n);
-        inint(m);
-        inint(k);
-        vi a(n);
-        cin>>a;
-        vi b(m);
-        cin>>b;
-        // code here 
-        sort(all(a));
-        sort(all(b));
-        int i=0,j=0;
-        int res=0;
-        while(i<n && j<m){
-            int req=a[i];
-            int left= req-k;
-            int right= req+k;
-           while (j < m) {
-                if (b[j] >= left && b[j] <= right) {
-                    res++;
-                    j++;
-                    break;
-                } else if (b[j] > right) {
-                    break;
-                }
-                j++;
+        inll(n);
+        inll(t);
+        vi v(n);
+        cin>>v;
+        // code4 
+        ll low= 1;
+        ll high= 1e18;
+        ll res=0;
+        for(int i=0;i<100;i++){
+            ll mid= low + (high-low) /2;
+            if(helper(mid,v,t)){
+                res=mid;
+                high=mid-1;
             }
-            i++;
+            else low=mid+1;
         }
         out(res)
     };
