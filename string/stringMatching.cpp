@@ -74,6 +74,8 @@ int32_t main()
         s=p+'$'+s;
         vi z(n,0);
         zTheorem(s,z);
+        for(int i=0;i<z.size();i++) cout<<z[i]<<" ";
+        cout<<endl;
         int res=0;
         foreach(i,0,n,1){
             if(z[i]>=p.size())res++;
