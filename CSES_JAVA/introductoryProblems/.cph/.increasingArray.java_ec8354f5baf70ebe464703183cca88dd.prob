@@ -1,0 +1,1 @@
+{"name":"Local: increasingArray","url":"d:\\CSES\\CSES_JAVA\\introductoryProblems\\increasingArray.java","tests":[{"id":1765721956127,"input":"5\n3 2 5 1 7","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\CSES\\CSES_JAVA\\introductoryProblems\\increasingArray.java","group":"local","local":true}
